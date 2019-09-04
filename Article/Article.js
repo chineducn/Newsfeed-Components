@@ -128,4 +128,8 @@ const articleCreator = function(title, date, paragraph1, paragraph2, paragraph3)
   paragraph2Creator.id = 'secondParagraph';
   paragraph3Creator.id = 'thirdParagraph';
   spanCreator.classList.add('expandButton');
+
+  spanCreator.addEventListener('click', () => {
+    divCreator.classList.toggle('article-open')
+  })
 }
