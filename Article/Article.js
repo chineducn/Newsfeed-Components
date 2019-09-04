@@ -132,4 +132,11 @@ const articleCreator = function(title, date, paragraph1, paragraph2, paragraph3)
   spanCreator.addEventListener('click', () => {
     divCreator.classList.toggle('article-open')
   })
+
+  headingCreator.textContent = title;
+  dateParagraphCreator.textContent = date;
+  paragraph1Creator.textContent = paragraph1;
+  paragraph2Creator.textContent = paragraph2;
+  paragraph3Creator.textContent = paragraph3;
+  spanCreator.textContent = 'open article';
 }
