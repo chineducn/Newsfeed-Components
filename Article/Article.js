@@ -139,4 +139,13 @@ const articleCreator = function(title, date, paragraph1, paragraph2, paragraph3)
   paragraph2Creator.textContent = paragraph2;
   paragraph3Creator.textContent = paragraph3;
   spanCreator.textContent = 'open article';
+
+  divCreator.appendChild(headingCreator);
+  divCreator.appendChild(dateParagraphCreator);
+  divCreator.appendChild(paragraph1Creator);
+  divCreator.appendChild(paragraph2Creator);
+  divCreator.appendChild(paragraph3Creator);
+  divCreator.appendChild(spanCreator);
+
+  return divCreator;
 }
