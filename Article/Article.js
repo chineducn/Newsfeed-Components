@@ -121,4 +121,11 @@ const articleCreator = function(title, date, paragraph1, paragraph2, paragraph3)
   const paragraph2Creator = document.createElement('p');
   const paragraph3Creator = document.createElement('p');
   const spanCreator = document.createElement('span');
+
+  divCreator.classList.add('article');
+  dateParagraphCreator.classList.add('date');
+  paragraph1Creator.id = 'firstParagraph';
+  paragraph2Creator.id = 'secondParagraph';
+  paragraph3Creator.id = 'thirdParagraph';
+  spanCreator.classList.add('expandButton');
 }
