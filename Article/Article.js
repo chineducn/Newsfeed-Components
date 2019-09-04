@@ -112,3 +112,40 @@ const data = [
   Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new article.
 
 */
+
+const articleCreator = function(title, date, paragraph1, paragraph2, paragraph3) {
+  const divCreator = document.createElement('div');
+  const headingCreator = document.createElement('h2');
+  const dateParagraphCreator = document.createElement('p');
+  const paragraph1Creator = document.createElement('p');
+  const paragraph2Creator = document.createElement('p');
+  const paragraph3Creator = document.createElement('p');
+  const spanCreator = document.createElement('span');
+
+  divCreator.classList.add('article');
+  dateParagraphCreator.classList.add('date');
+  paragraph1Creator.id = 'firstParagraph';
+  paragraph2Creator.id = 'secondParagraph';
+  paragraph3Creator.id = 'thirdParagraph';
+  spanCreator.classList.add('expandButton');
+
+  spanCreator.addEventListener('click', () => {
+    divCreator.classList.toggle('article-open')
+  })
+
+  headingCreator.textContent = title;
+  dateParagraphCreator.textContent = date;
+  paragraph1Creator.textContent = paragraph1;
+  paragraph2Creator.textContent = paragraph2;
+  paragraph3Creator.textContent = paragraph3;
+  spanCreator.textContent = 'open article';
+
+  divCreator.appendChild(headingCreator);
+  divCreator.appendChild(dateParagraphCreator);
+  divCreator.appendChild(paragraph1Creator);
+  divCreator.appendChild(paragraph2Creator);
+  divCreator.appendChild(paragraph3Creator);
+  divCreator.appendChild(spanCreator);
+
+  return divCreator;
+}
