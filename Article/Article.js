@@ -112,3 +112,13 @@ const data = [
   Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new article.
 
 */
+
+const articleCreator = function(title, date, paragraph1, paragraph2, paragraph3) {
+  const divCreator = document.createElement('div');
+  const headingCreator = document.createElement('h2');
+  const dateParagraphCreator = document.createElement('p');
+  const paragraph1Creator = document.createElement('p');
+  const paragraph2Creator = document.createElement('p');
+  const paragraph3Creator = document.createElement('p');
+  const spanCreator = document.createElement('span');
+}
